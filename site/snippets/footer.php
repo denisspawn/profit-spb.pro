@@ -13,6 +13,8 @@
     
     </div>
   </footer>
-
+  
+  <?= js('assets/js/libs.min.js') ?>
+  <?= js('assets/js/common.js') ?>
 </body>
 </html>

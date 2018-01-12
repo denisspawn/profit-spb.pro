@@ -1,0 +1,154 @@
+@charset "UTF-8"
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700&subset=latin,cyrillic)
+
+$font-stack: "Open Sans", sans-serif
+
+$primary_color: #00ffff
+$secondary_color: #1a1a1a
+
+body *
+	font-family:  "Open Sans", sans-serif
+body
+	padding-top: 86px
+
+.wrapper_container_menu
+	background-color: $secondary_color
+	padding-top: 10px
+	padding-bottom: 10px
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.345)
+	color: $primary_color
+	.logo_wrap
+		margin: 0 auto
+		img
+			height: 54px
+
+.wrapper_container_menu
+	position: fixed
+	z-index: 999
+	width: 100%
+	top: 0
+  left: 0
+
+.menu
+	text-align: center
+	margin: 0
+	font-size: 20px
+	padding: 12px 0 0 0
+	.menu-item
+		display: inline-block
+		a
+			color: #fff
+			text-decoration: none
+		a:hover
+			border-bottom: 2px solid $primary_color
+
+// стили для активного элемента меню
+.menu-item.is-active a
+	border-bottom: 2px solid $primary_color
+
+.menu-item:not(:last-child)::after
+	content: ""
+	display: inline-block
+	padding: 0 .2em
+
+.phone
+	text-align: center
+	a
+		color: #fff
+		font-size: 16px
+		font-weight: bold
+		text-decoration: none
+	a:hover
+		color: #fff
+
+.phone-header
+	font-size: 16px
+	padding-right: 6px
+
+.request
+	text-align: center
+	.wrapper
+		display: inline-block
+		border: 2px solid $primary_color
+		border-radius: 12px
+		padding: 4px 16px
+	.bullhorn-header
+		padding-right: 6px
+	a
+		text-transform: uppercase
+		font-weight: bold
+		color: $primary_color
+		text-decoration: none
+	a:hover
+		color: #fff
+
+.owl-carousel
+	.item
+		height: 400px
+		color: #000
+		background-size: cover
+
+.nav_wrap
+	position: relative
+.nav-slider
+	font-size: 36px
+	color: #fff
+	div
+		cursor: pointer
+		z-index: 2
+		position: absolute
+		top: 40%
+		&:last-child
+			right: 0
+
+.owl-carousel
+	.owl-dots
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			&.active
+				span
+					background: #869791
+			span
+				width: 10px
+				height: 10px
+				margin: 5px 7px
+				background: #D6D6D6
+				display: block
+				-webkit-backface-visibility: visible
+				-webkit-transition: opacity .2s ease
+				-o-transition: opacity .2s ease
+				transition: opacity .2s ease
+				-webkit-border-radius: 30px
+				border-radius: 30px
+				&:hover
+					background: #869791
+
+.trust_triggers
+	.p_wrap
+		text-align: center
+		p
+			display: inline-block
+			width: 140px
+			font-weight: bold
+	.h2_wrap
+		text-align: center
+		h2
+			font-size: 32px
+			border-bottom: 3px solid $primary_color
+			display: inline-block
+	.triger
+		width: 140px
+		height: 140px
+		background-color: $secondary_color
+		margin: 0 auto
+		border-radius: 50%
+		display: table
+		box-shadow: 0 6px 10px rgba(0,0,0,0.5)
+		.image_triger
+			display: table-cell
+			vertical-align: middle
+			text-align: center
