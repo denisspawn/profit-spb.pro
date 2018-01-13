@@ -5,6 +5,9 @@ body * {
 body {
   padding-top: 86px; }
 
+hr {
+  border: 1px solid #ccc; }
+
 .wrapper_container_menu {
   background-color: #1a1a1a;
   padding-top: 10px;
@@ -77,7 +80,7 @@ body {
   .request a:hover {
     color: #fff; }
 
-.owl-carousel .item {
+#main-slider .item {
   height: 400px;
   color: #000;
   -webkit-background-size: cover;
@@ -88,7 +91,8 @@ body {
 
 .nav-slider {
   font-size: 36px;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 1px 2px #000000; }
   .nav-slider div {
     cursor: pointer;
     z-index: 2;
@@ -128,13 +132,6 @@ body {
     width: 140px;
     font-weight: bold; }
 
-.trust_triggers .h2_wrap {
-  text-align: center; }
-  .trust_triggers .h2_wrap h2 {
-    font-size: 32px;
-    border-bottom: 3px solid #00ffff;
-    display: inline-block; }
-
 .trust_triggers .triger {
   width: 140px;
   height: 140px;
@@ -149,3 +146,88 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
+
+.h2_wrap {
+  text-align: center; }
+  .h2_wrap h2 {
+    font-size: 32px;
+    border-bottom: 3px solid #00ffff;
+    display: inline-block; }
+
+.link_service_item {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00ffff;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  margin: 10% auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+  height: 300px;
+  width: 240px;
+  -webkit-border-radius: 5%;
+          border-radius: 5%;
+  opacity: 0.94; }
+  .link_service_item:hover {
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    text-decoration: none;
+    opacity: 1; }
+
+.servise_item .service_img {
+  display: inline-block; }
+  .servise_item .service_img img {
+    height: 140px;
+    max-width: 160px; }
+
+.service_p {
+  display: table;
+  margin: 0 auto;
+  height: 120px;
+  width: 94%; }
+  .service_p p {
+    display: table-cell;
+    vertical-align: middle; }
+
+#brand-slider .item {
+  height: 250px;
+  color: #000;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 24px 0 10px 0;
+  color: #fff; }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #00ffff; }
+  .footer .logo_wrap img {
+    padding-top: 14px;
+    height: 100px; }
+  .footer .p_phone-footer, .footer .p_mail-footer, .footer .p_ooo_footer {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 6px 0; }
+    .footer .p_phone-footer .phone-footer, .footer .p_phone-footer .mail-footer, .footer .p_mail-footer .phone-footer, .footer .p_mail-footer .mail-footer, .footer .p_ooo_footer .phone-footer, .footer .p_ooo_footer .mail-footer {
+      padding-right: 6px; }
+
+.footer_col_2 {
+  border-left: 1px solid #ccc;
+  padding-left: 20px; }
+  .footer_col_2 h4 {
+    margin-bottom: 0; }
+  .footer_col_2 ul {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-position: inside; }
+
+.footer-copyright {
+  color: #fff; }

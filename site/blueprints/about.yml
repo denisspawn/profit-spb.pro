@@ -7,7 +7,7 @@ pages:
 files: false
 
 options: 
-  template: false  
+  template: true  
   status: false  
   
 fields:

@@ -11,6 +11,12 @@ body *
 body
 	padding-top: 86px
 
+hr
+	border: 1px solid #ccc
+
+
+//**header style for BEGIN**//
+
 .wrapper_container_menu
 	background-color: $secondary_color
 	padding-top: 10px
@@ -82,7 +88,7 @@ body
 	a:hover
 		color: #fff
 
-.owl-carousel
+#main-slider
 	.item
 		height: 400px
 		color: #000
@@ -93,6 +99,7 @@ body
 .nav-slider
 	font-size: 36px
 	color: #fff
+	text-shadow: 0 1px 2px #000000
 	div
 		cursor: pointer
 		z-index: 2
@@ -127,6 +134,10 @@ body
 				&:hover
 					background: #869791
 
+//**header style for END**//
+
+//**trigers style section BEGIN**//
+
 .trust_triggers
 	.p_wrap
 		text-align: center
@@ -134,12 +145,6 @@ body
 			display: inline-block
 			width: 140px
 			font-weight: bold
-	.h2_wrap
-		text-align: center
-		h2
-			font-size: 32px
-			border-bottom: 3px solid $primary_color
-			display: inline-block
 	.triger
 		width: 140px
 		height: 140px
@@ -152,3 +157,100 @@ body
 			display: table-cell
 			vertical-align: middle
 			text-align: center
+
+//**trigers style section END**//
+
+//**servises style section BEGIN**//
+
+.h2_wrap
+	text-align: center
+	h2
+		font-size: 32px
+		border-bottom: 3px solid $primary_color
+		display: inline-block
+
+.link_service_item
+	display: block
+	font-weight: bold
+	font-size: 18px
+	color: $primary_color
+	box-shadow: 0 6px 10px rgba(0,0,0,0.5)
+	margin: 10% auto
+	padding: 20px
+	text-align: center
+	background-color: $secondary_color
+	height: 300px
+	width: 240px
+	border-radius: 5%
+	opacity: 0.94
+	&:hover
+		color: #fff
+		box-shadow: none
+		transition: opacity .3s ease
+		text-decoration: none
+		opacity: 1
+
+.servise_item
+	.service_img
+		display: inline-block
+		img
+			height: 140px
+			max-width: 160px
+
+.service_p
+	display: table
+	margin: 0 auto
+	height: 120px
+	width: 94%
+	p
+		display: table-cell
+		vertical-align: middle
+
+//**servises style section END**//
+
+//**brand-slider style section BEGIN**/
+#brand-slider
+	.item
+		height: 250px
+		color: #000
+		background-size: cover
+
+//**brand-slider style section END**/
+
+//**footer style section BEGIN**/
+.footer
+	background-color: $secondary_color
+	padding: 24px 0 10px 0
+	color: #fff
+	a
+		color: #fff
+		&:hover
+			color: $primary_color
+	.logo_wrap
+		img
+			padding-top: 14px
+			height: 100px
+	.p_phone-footer, .p_mail-footer, .p_ooo_footer
+		font-weight: bold
+		font-size: 20px
+		margin: 6px 0
+		.phone-footer, .mail-footer
+			padding-right: 6px
+		
+
+.footer_col_1
+	//text-align: center
+.footer_col_2
+	border-left: 1px solid #ccc
+	padding-left: 20px
+	h4
+		margin-bottom: 0
+	ul
+		margin-top: 0
+		padding-left: 0
+		list-style-position: inside
+
+
+.footer-copyright
+	color: #fff
+//**footer style section END**/

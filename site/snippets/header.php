@@ -48,6 +48,11 @@
         </div>
       </div>
     </div>
+    <?php 
+    $myimage = new Asset('assets/img/slider/hinsdale_final.jpg');
+
+    echo thumb($myimage, array('width' => 300));
+    ?>
     <div class="container">
       <div class="nav_wrap">
         <div class="nav-slider">
@@ -55,7 +60,7 @@
           <div class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
         </div>
         <div class="row">
-          <div class="owl-carousel owl-theme">
+          <div id="main-slider" class="owl-carousel owl-theme">
               <div class="item"><img src="assets/img/slider/hinsdale_final.jpg" alt=""></div>
               <div class="item"><img src="assets/img/slider/home_plumbing.jpg" alt=""></div>
               <div class="item"><img src="assets/img/slider/residential-plumbing.jpg" alt=""></div>
