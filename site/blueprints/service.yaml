@@ -13,8 +13,16 @@ fields:
     
   intro:
     label: Intro
-    type: textarea
+    type: text
     
   text:
     label: Text
+    type: textarea
+
+  table:
+    label: Table
+    type: textarea
+
+  guarantees:
+    label: Guarantees
     type: textarea

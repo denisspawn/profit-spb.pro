@@ -1,0 +1,28 @@
+title: Actions
+
+pages:
+  template: team
+  num: zero
+
+files: false
+
+options: 
+  template: true  
+  status: false  
+  
+fields:
+  title:
+    label: Title
+    type: title
+
+  intro:
+    label: Intro
+    type: text
+
+  table:
+    label: Table
+    type: textarea
+    
+  text:
+    label: Text
+    type: textarea

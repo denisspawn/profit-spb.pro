@@ -11,3 +11,7 @@ Description: This is Kirby's Starterkit.
 ----
 
 Copyright: Все права защищены © (date: Year) г.
+
+----
+
+Slider1: tubing.jpg

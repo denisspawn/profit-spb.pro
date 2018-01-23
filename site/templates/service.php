@@ -1,39 +1,39 @@
 <?php snippet('header') ?>
 
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <?php if($image = $page->image('banner.png')): ?>
+        <?php echo $image->title() ?>
+        <img src="<?= $image->url()?>" alt="">
+      <?php endif ?>
+    </div>
+  </div>
+</section>
+
 <!-- ############################################################################################# -->
   <main class="main" role="main">
 
-    <?php snippet('service_section') ?>
-
-    <div class="container">
+    <div class="container service">
       <div class="row">
-        <hr>
-      </div>
-    </div>
-
-    <section class="brands">
-      <div class="container">
-        <div class="nav_wrap">
-          <div class="nav-slider">
-            <div class="prev2"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-            <div class="next2"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-          </div>
-          <div class="row">
-            <div id="brand-slider" class="owl-carousel owl-theme">
-              <div class="item"><img src="assets/img/brands/jika.svg" alt=""></div>
-              <div class="item"><img src="assets/img/brands/roca.svg" alt=""></div>
-              <div class="item"><img src="assets/img/brands/cersanit.svg" alt=""></div>
-            </div>
+        <div class="col-lg-12">
+          <?= $page->intro()->kirbytext() ?>
+        </div>
+        <div class="col-lg-12">
+          <?= $page->text()->kirbytext() ?>
+        </div>
+        <div class="col-lg-12">
+          <div class="table_wrap">
+            <?= $page->table()->kirbytext() ?>
           </div>
         </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <div class="row">
-        <hr>
+        <div class="col-lg-12">
+          <p><?= $page->guarantees()->kirbytext() ?></p> 
+        </div>
       </div>
     </div>
+
+    <?php snippet('carousel') ?>
 
   </main>
 

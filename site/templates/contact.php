@@ -1,41 +1,27 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+    <main class="main" role="main">
     
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>      
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>    
-      <hr />      
-    </header>
-    
-    <div class="wrap wide">
-      <h2>Get in Touch</h2>
-      
-      <ul class="contact-options">
-        <?php foreach($page->contactoptions()->toStructure() as $item): ?>
-          <?php $icon = $page->image($item->icon()); ?>
-          <li class="contact-item column">
-            <div class="contact-item-content">
-              <img src="<?= $icon->url() ?>" width="<?= $icon->width() ?>" alt="<?= $item->title()->html() ?> icon" class="contact-item-icon" />
-              <h3 class="contact-item-title"><?= $item->title()->html() ?></h3>
-              <p class="contact-item-text">
-                <?= $item->text()->html() ?>
-              </p>
-            </div>
-            <p class="contact-item-action">
-              <a href="<?= $item->url()->html() ?>" class="contact-action btn"><?= $item->linktext()->html() ?></a>
-            </p>
-          </li>
-        <?php endforeach ?>
-      </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="wrap_contacts">
+            <p class="p_phone-footer"><a href="tel:88129141566"><span class="fa fa-phone phone-footer"></span>8 (812) 914-15-66</a></p>
+            <p class="p_mail-footer"><a href="mailto:office@profit-spb.pro"><span class="fa fa-envelope mail-footer"></span>office@profit-spb.pro</a></p>
+            <p class="address"><span class="fa fa-home" aria-hidden="true"></span>198184, г. Санкт-Петербург, Канонерский остров, д. 22 А</p>
+            <p class="p_ooo_contacts">ООО "Профит"</p>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="wrap_map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8a2cc594c035af960d654241bf882c2263453b48cf9d507373b1c069bebd772e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
     </div>
-      
-    <div class="contact-twitter text wrap cf">
-      <?= $page->text()->kirbytext() ?>
-    </div>
-    
+
+    <?php snippet('carousel') ?>
+  
   </main>
 
 <?php snippet('footer') ?>

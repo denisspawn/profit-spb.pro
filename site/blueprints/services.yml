@@ -4,7 +4,10 @@ files: true
 
 options: 
   template: true  
-  status: true  
+  status: true
+
+pages:
+  template: service
   
 fields:
   title:

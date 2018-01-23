@@ -1,5 +1,12 @@
 title: Site
 
+files: true
+  sortable: true
+  fields:
+    caption:
+      label: Подпись к фото
+      type: text
+
 fields:
   title:
     label: Title
@@ -16,3 +23,13 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
+
+  main_slider:
+    label: Main slider
+    type: headline
+    numbered: true
+
+  slider1:
+    laber: Первый слайдер
+    type: image
+    width: 1/2
