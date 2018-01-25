@@ -502,6 +502,8 @@ a:focus {
   .service_p {
     height: 100px;
     width: 94%; }
+    .service_p p {
+      font-size: .9em; }
   .table_wrap table {
     width: 100%;
     font-size: .8em; }
