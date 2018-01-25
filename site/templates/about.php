@@ -2,7 +2,7 @@
 
   <main class="main" role="main">
     
-    <section class="team wrap wide">
+    <section class="about">
 
       <div class="container">
         <div class="row">

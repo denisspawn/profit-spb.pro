@@ -1,7 +1,7 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 footer_col_1">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer_col_1">
           <div class="logo_wrap">
             <?php if($image = $site->image('logo.svg')): ?>
               <a href="<?= url() ?>" rel="home"><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>"></a>
@@ -16,7 +16,7 @@
           echo html::decode($site->copyright()->kirbytext())
           ?></p>
         </div>
-        <div class="col-lg-5 footer_col_2">
+        <div class="col-lg-5 col-md-8 col-sm-8 col-xs-12 footer_col_2">
           <h4>Мы выполняем:</h4>
           <ul>
           <?php foreach($site->children()->services()->children()->visible() as $item): ?>
@@ -24,7 +24,7 @@
           <?php endforeach ?>
           </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <div class="form_wrap">
             <div class="attention_wrap">
               <p class="attention"><span class="fa fa-bullhorn bullhorn-header"></span>Внимание!</p>
@@ -43,7 +43,7 @@
 
   <?php snippet('hidden_form') ?>
 
-  <div class="sales">
+  <div class="sales hidden-sm hidden-xs">
     <a href="/actions">Акции</a>
   </div>
   

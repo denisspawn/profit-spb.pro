@@ -8,8 +8,8 @@
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
-  <?= css('assets/css/main.css') ?>
   <?= css('assets/css/libs.min.css') ?>
+  <?= css('assets/css/main.css') ?>
 
 </head>
 <body>
@@ -60,6 +60,9 @@
                   <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
                 </li>
                 <?php endforeach ?>
+                <li class="mobile-menu-item">
+                  <a href="/actions">Акции</a>
+              </li>
               </ul>
             </nav>
           </div>

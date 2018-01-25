@@ -13,6 +13,9 @@ h1 {
   display: inline-block;
   border-bottom: 1px solid #FFBA3C; }
 
+p {
+  font-size: 22px; }
+
 a:focus {
   outline: none; }
 
@@ -253,10 +256,11 @@ a:focus {
     margin: 6px 0; }
     .footer .p_phone-footer .phone-footer, .footer .p_phone-footer .mail-footer, .footer .p_mail-footer .phone-footer, .footer .p_mail-footer .mail-footer, .footer .p_ooo_footer .phone-footer, .footer .p_ooo_footer .mail-footer {
       padding-right: 6px; }
+  .footer .footer-copyright {
+    font-size: 16px; }
 
 .footer_col_2 {
   border-left: 2px solid #ccc;
-  border-right: 2px;
   padding-left: 20px; }
   .footer_col_2 h4 {
     margin-bottom: 0; }
@@ -286,6 +290,8 @@ a:focus {
     font-size: 12px;
     color: #ccc;
     margin: 0 auto; }
+  .form_wrap p {
+    font-size: 16px; }
 
 .form {
   text-align: center; }
@@ -315,9 +321,6 @@ a:focus {
       outline: none; }
     .form button:hover {
       color: #fff; }
-
-.service p {
-  font-size: 22px; }
 
 .table_wrap table {
   border: 2px solid #203447;
@@ -377,9 +380,6 @@ a:focus {
 .wrap_map {
   min-height: 400px; }
 
-.about_wrap p {
-  font-size: 22px; }
-
 .sales {
   background-color: #203447;
   text-align: center;
@@ -394,9 +394,6 @@ a:focus {
     color: #FFBA3C; }
     .sales a:hover {
       color: #fff; }
-
-.actions p {
-  font-size: 22px; }
 
 .banner img {
   -webkit-box-shadow: 0 8px 6px -6px #000;
@@ -441,6 +438,12 @@ a:focus {
             transform: rotate(-45deg) translate(6px, -7px); }
 
 @media (max-width: 575px) {
+  h1 {
+    font-size: 1em; }
+  h2 {
+    font-size: 1em; }
+  p {
+    font-size: .9em; }
   .trust_triggers .p_wrap p {
     width: 60px;
     font-size: 8px; }
@@ -470,15 +473,67 @@ a:focus {
     font-size: 9px; }
   .phone a {
     font-size: 12px; }
+  .footer_col_2 {
+    border-left: none;
+    padding-left: 14px; }
+    .footer_col_2 h4 {
+      margin-bottom: 0; }
+    .footer_col_2 ul {
+      font-size: 10px;
+      margin-top: 0;
+      padding-left: 0;
+      list-style-position: inside; }
+  .footer .logo_wrap {
+    float: left; }
+    .footer .logo_wrap img {
+      padding-right: 20px;
+      height: 70px; }
+  .footer .p_phone-footer, .footer .p_mail-footer, .footer .p_ooo_footer {
+    font-size: 14px; }
+  .link_service_item {
+    font-size: 14px;
+    height: 200px;
+    width: 200px; }
+  .servise_item .service_img img {
+    height: 80px;
+    max-width: 160px; }
+  .service_p {
+    height: 100px;
+    width: 94%; }
+  .table_wrap table {
+    width: 100%;
+    font-size: .8em; }
+    .table_wrap table td {
+      padding: 8px 4px; }
   /**/ }
 
 @media (min-width: 576px) and (max-width: 767px) {
   /**/ }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 16px; }
+  .table_wrap table {
+    width: 100%;
+    font-size: 1.2em; }
+    .table_wrap table td {
+      padding: 8px 4px; }
+  .footer .logo_wrap img {
+    padding-right: 20px;
+    height: 80px; }
+  .footer .p_phone-footer, .footer .p_mail-footer, .footer .p_ooo_footer {
+    font-size: 16px; }
+  .footer-copyright {
+    font-size: 14px; }
+  .form_wrap {
+    margin: 20px; }
   /**/ }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .footer-copyright {
+    font-size: 18px; }
+  .form_wrap {
+    margin: 20px; }
   /**/ }
 
 @media (min-width: 1200px) {
