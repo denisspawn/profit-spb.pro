@@ -163,7 +163,8 @@ a:focus {
   .trust_triggers .p_wrap p {
     display: inline-block;
     width: 140px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 16px; }
 
 .trust_triggers .triger {
   width: 140px;
@@ -226,7 +227,8 @@ a:focus {
   width: 94%; }
   .service_p p {
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+    font-size: 18px; }
 
 #brand-slider .owl-item .item {
   margin: 0 auto;
@@ -534,6 +536,18 @@ a:focus {
     font-size: 18px; }
   .form_wrap {
     margin: 20px; }
+  .link_service_item {
+    font-size: 14px;
+    height: 200px;
+    width: 200px; }
+  .servise_item .service_img img {
+    height: 80px;
+    max-width: 160px; }
+  .service_p {
+    height: 100px;
+    width: 94%; }
+    .service_p p {
+      font-size: 12px; }
   /**/ }
 
 @media (min-width: 1200px) {
