@@ -1,12 +1,14 @@
-Title: Kirby Starterkit
+Title: Профит
 
 ----
 
-Author: Bastian Allgeier
+Author: profit-spb.pro
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: 
+
+Производим квалифицированный монтаж, замену и ремонт сантехнических изделий и приборов. Наша компания существует более 10 лет. Гарантируем качество, профессионализм и скорость выполнения работы.
 
 ----
 
@@ -14,4 +16,4 @@ Copyright: Все права защищены © (date: Year) г.
 
 ----
 
-Slider1: tubing.jpg
+Slider1: 

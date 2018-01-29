@@ -7,6 +7,9 @@
 
   <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
+  
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
 
   <?= css('assets/css/libs.min.css') ?>
   <?= css('assets/css/main.css') ?>

@@ -1,9 +1,11 @@
-Title: Error
+Title: Ошибка
 
 ----
 
-Intro: The page has not been found.
+Intro: Запрашиваемая страница не найдена
 
 ----
 
-Text: Well, stuff can go wrong sometimes and maybe you mistyped a URL, tapped/clicked on a broken link or your computer just wants to drive you nuts. Anyway … keep calm and take a look at our beautiful (link: / text: homepage) instead.
+Text: 
+
+Что-то пошло не так, возможно вы неправильно указали URL-адрес, нажали на неработающую ссылку, или ваш компьютер просто хочет свести вас с ума. В любом случае ... успокойтесь и посмотрите на нашу красивую (link: / text: домашнюю) страницу.
