@@ -11,9 +11,9 @@
           <div class="item"><p><img src="/assets/img/brands/jika.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/roca.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/cersanit.svg" alt=""></p></div>
-          <div class="item"><p><img src="/assets/img/brands/aquaton.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/ifo.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/grohe.svg" alt=""></p></div>
+          <div class="item"><p><img src="/assets/img/brands/hansgrohe.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/grunfos.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/ideal.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/ido.svg" alt=""></p></div>
@@ -32,6 +32,9 @@
           <div class="item"><p><img src="/assets/img/brands/geberit.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/villeroy.svg" alt=""></p></div>
           <div class="item"><p><img src="/assets/img/brands/sfa.svg" alt=""></p></div>
+          <div class="item"><p><img src="/assets/img/brands/damixa.svg" alt=""></p></div>
+          <div class="item"><p><img src="/assets/img/brands/luxus.svg" alt=""></p></div>
+          <div class="item"><p><img src="/assets/img/brands/edelform.svg" alt=""></p></div>
         </div>
       </div>
     </div>
