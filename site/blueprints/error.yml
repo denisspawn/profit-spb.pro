@@ -4,13 +4,13 @@ pages: false
 
 fields:
   title:
-    label: Title
+    label: Заголовок
     type:  text
 
   intro:
-    label: Intro
+    label: Вводный текст
     type:  textarea
 
   text:
-    label: Text
+    label: Основной текст
     type:  textarea

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main class="main">
     
     <article class="article single wrap">
 

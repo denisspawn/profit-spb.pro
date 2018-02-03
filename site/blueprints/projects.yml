@@ -12,9 +12,9 @@ options:
 
 fields:
   title:
-    label: Title
+    label: Заголовок
     type:  text
 
   text:
-    label: Text
+    label: Текст
     type:  textarea

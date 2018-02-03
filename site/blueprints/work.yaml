@@ -1,29 +1,25 @@
-title: Article
+title: Work
 
-pages: false
+files: true
 
+options: 
+  template: true  
+  status: true
+
+pages:
+  template: page
+  
 fields:
   title:
-    label: Title
-    type:  title
+    label: Заголовок
+    type: title
     
-  coverimage:
-    label: Cover Image
-    type: image
-    width: 1/2
+  intro:
+    label: Вводный текст
+    type: textarea
     
-  date:
-    icon: calendar
-    label: Date
-    type: date
-    format: LL
-    placeholder: Select a date…
-    default: today
-    required: true
-    width: 1/2
-  
   text:
-    label: Текст
+    label: Основной текс
     type: textarea
 
   meta:

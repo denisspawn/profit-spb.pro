@@ -4,7 +4,7 @@
 
 <!-- ############################################################################################# -->
 
-  <main class="main" role="main">
+  <main class="main">
   
     <section class="trust_triggers">
       <div class="container">
@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="p_wrap">
-              <p>Мы профес&shyсионалы</p>
+              <p>Мы профес&shy;сионалы</p>
             </div>
           </div>
         </div>

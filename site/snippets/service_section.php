@@ -10,7 +10,7 @@
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a href="<?= $item->url() ?>" class="link_service_item">
                   <div class="servise_item">
-                    <div class="service_img"><img src="<?= $image->url() ?>" alt=""></div>
+                    <div class="service_img"><img src="<?= $image->url() ?>" alt="<?= $item->title() ?>"></div>
                     <div class="service_p"><p><?= $item->title()->html() ?></p></div>
                   </div>
                 </a>

@@ -1,10 +1,10 @@
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer_col_1">
           <div class="logo_wrap">
             <?php if($image = $site->image('logo.svg')): ?>
-              <a href="<?= url() ?>" rel="home"><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>"></a>
+              <a href="<?= url() ?>" rel="home"><img src="<?php echo $image->url() ?>" alt="logo"></a>
             <?php endif ?>
           </div>
           <p class="p_phone-footer"><a href="tel:88129141566"><span class="fa fa-phone phone-footer"></span>8 (812) 914-15-66</a></p>

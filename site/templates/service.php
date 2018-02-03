@@ -11,8 +11,7 @@
   </div>
 </section>
 
-<!-- ############################################################################################# -->
-  <main class="main" role="main">
+  <main class="main">
 
     <div class="container service">
       <div class="row">
@@ -28,7 +27,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <p><?= $page->guarantees()->kirbytext() ?></p> 
+          <p><?= $site->warranty()->kirbytext() ?></p> 
         </div>
       </div>
     </div>
@@ -36,7 +35,5 @@
     <?php snippet('carousel') ?>
 
   </main>
-
-  <!-- ############################################################################################# -->
 
 <?php snippet('footer') ?>

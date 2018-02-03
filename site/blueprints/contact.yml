@@ -8,11 +8,11 @@ options:
 
 fields: 
   title:
-    label: Title
+    label: Заголовок
     type: title
   
   intro:
-    label: Intro
+    label: Вводный текст
     type: textarea
     
   contactoptions:
@@ -37,5 +37,17 @@ fields:
         type: text
   
   text:
-    label: Text
+    label: Основной текст
+    type: textarea
+    
+  meta_title:
+    label: Заголовок (meta-title)
+    type: text
+
+  meta_keywords:
+    label: Ключевые слова (meta-keywords)
+    type: textarea
+
+  meta_description:
+    label: Описание (meta-description)
     type: textarea

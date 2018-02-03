@@ -1,53 +1,44 @@
+<?php
+  $title =       (strlen($page->meta_title()) > 1) ? $page->meta_title() : $site->meta_title();
+  $keywords =    (strlen($page->meta_keywords()) > 1) ? $page->meta_keywords() : $site->meta_keywords();
+  $description = (strlen($page->meta_description()) > 1) ? $page->meta_description() : $site->meta_description();
+?>
+
 <!doctype html>
 <html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
 <head>
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJJ6HG9');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="copyright" content="<?= $site->author() ?>" >
+  <?php $keywords = (strlen($page->meta_keywords()) > 1) ? $page->meta_keywords() : $site->meta_keywords() ?>
+  <meta name="keywords" content="<?= $keywords ?>">
+  <meta name="description" content="<?= $description ?>">
 
-  <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
-  <meta name="description" content="<?= $site->description()->html() ?>">
+  <title><?= $site->title()->html() ?> | <?= $title ?></title>
   
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+  <link rel="icon" type="image/png" href="/favicon.png" >
 
   <?= css('assets/css/libs.min.css') ?>
   <?= css('assets/css/main.css') ?>
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-      (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-              try {
-                  w.yaCounter47439013 = new Ya.Metrika2({
-                      id:47439013,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true,
-                      trackHash:true,
-                      ecommerce:"dataLayer"
-                  });
-              } catch(e) { }
-          });
-
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-      })(document, window, "yandex_metrika_callbacks2");
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/47439013" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJJ6HG9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <header class="header clearfix">
     <div class="container-fluid wrapper_container_menu">
       <div class="container menu_wrap" role="menu">
@@ -56,13 +47,13 @@
             <div class="logo">
               <div class="logo_wrap">
                 <?php if($image = $site->image('logo.svg')): ?>
-                  <a href="<?= url() ?>" rel="home"><img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>"></a>
+                  <a href="<?= url() ?>" rel="home" title="logo"><img src="<?php echo $image->url() ?>" alt="logo"></a>
                 <?php endif ?>
               </div>
             </div>
           </div>
           <div class="col-lg-7 col-md-7 hidden-sm hidden-xs">
-            <nav class="navigation column" role="navigation">
+            <nav class="navigation column">
               <ul class="menu">
                 <?php foreach($pages->visible() as $item): ?>
                 <li class="menu-item<?= r($item->isOpen(), ' is-active') ?>">
@@ -88,7 +79,7 @@
           </div>
 
           <div class="col-sm-12 col-xs-12">
-            <nav class="navigation column hidden-lg hidden-md" role="navigation">
+            <nav class="navigation column hidden-lg hidden-md">
               <ul class="mobile-menu">
                 <?php foreach($pages->visible() as $item): ?>
                 <li class="mobile-menu-item<?= r($item->isOpen(), ' is-active') ?>">
