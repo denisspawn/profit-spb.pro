@@ -19,7 +19,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="copyright" content="<?= $site->author() ?>" >
-  <?php $keywords = (strlen($page->meta_keywords()) > 1) ? $page->meta_keywords() : $site->meta_keywords() ?>
   <meta name="keywords" content="<?= $keywords ?>">
   <meta name="description" content="<?= $description ?>">
 
@@ -28,8 +27,11 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico" >
   <link rel="icon" type="image/png" href="/favicon.png" >
 
+  <!-- Bootstrap GRID v3.3.7-->
+  <?= css('assets/libs/bootstrap/bootstrap_grid.min.css') ?>
+
+  <?= css('assets/css/main.min.css') ?>
   <?= css('assets/css/libs.min.css') ?>
-  <?= css('assets/css/main.css') ?>
 
 </head>
 <body>

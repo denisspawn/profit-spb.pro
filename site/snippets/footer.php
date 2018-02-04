@@ -48,7 +48,7 @@
   </div>
   
   <?= js('assets/js/libs.min.js') ?>
-  <?= js('assets/js/common.js') ?>
+  <?= js('assets/js/common.min.js') ?>
 
   <!-- BEGIN JIVOSITE CODE {literal} -->
   <script type='text/javascript'>

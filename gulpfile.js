@@ -34,6 +34,14 @@ gulp.task('scripts', function() {
 	.pipe(browserSync.stream()); // стримит изменения напрямую в DOM дерево без полной перезагрузки
 });
 
+gulp.task('common-js', function() {
+	return gulp.src('assets/js/common.js')
+	.pipe(uglify()) // Сжимаем JS файл
+	.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+	.pipe(gulp.dest('assets/js')) // Выгружаем в папку assets/js
+	.pipe(browserSync.stream()); // стримит изменения напрямую в DOM дерево без полной перезагрузки
+});
+
 gulp.task('sass', function() {
 	return gulp.src('assets/sass/**/*.sass') // шаблоны выборки могут быть разными. Если перд выборкой поставить "!" то этот файл попадет в исключения и не попадет в выборку.
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sas
@@ -43,7 +51,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('css-libs', function() {
-	return gulp.src('assets/css/libs.css') // Выбираем файл для минификации
+	return gulp.src(['assets/css/libs.css', 'assets/css/main.css']) // Выбираем файл для минификации
 	.pipe(cssnano()) // Сжимаем
 	.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 	.pipe(gulp.dest('assets/css')) // Выгружаем в папку assets/css
@@ -106,4 +114,4 @@ gulp.task('clear', function() { // таск для очистки кэша
 	return cache.clearAll();
 });
 
-gulp.task('default', gulp.parallel('scripts', 'sass', 'css-libs', 'watch', 'browser-sync')); // paralles выполняет таски параллельно и запускает их в определенной последовательности
+gulp.task('default', gulp.parallel('scripts', 'common-js', 'sass', 'css-libs', 'watch', 'browser-sync')); // paralles выполняет таски параллельно и запускает их в определенной последовательности
