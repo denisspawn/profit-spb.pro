@@ -121,7 +121,8 @@ a:focus {
             background-size: cover; }
 
 .nav_wrap {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .nav-slider {
   font-size: 36px;
@@ -129,7 +130,7 @@ a:focus {
   text-shadow: 0 1px 2px #000000; }
   .nav-slider div {
     cursor: pointer;
-    z-index: 9999;
+    z-index: 2;
     position: absolute;
     top: 40%; }
     .nav-slider div:last-child {
@@ -340,7 +341,7 @@ a:focus {
     padding: 20px; }
   .table_wrap table td {
     border: 1px solid #203447;
-    padding: 10px; }
+    padding: 20px; }
 
 .table_wrap tr:hover {
   background-color: #ccc; }
@@ -479,6 +480,8 @@ a:focus {
     font-size: 9px; }
   .phone a {
     font-size: 12px; }
+  .nav-slider div {
+    top: 30%; }
   .footer_col_2 {
     border-left: none;
     padding-left: 14px; }
@@ -489,6 +492,10 @@ a:focus {
       margin-top: 0;
       padding-left: 0;
       list-style-position: inside; }
+  .table_wrap table th {
+    padding: 10px; }
+  .table_wrap table td {
+    padding: 10px; }
   .footer .logo_wrap {
     float: left; }
     .footer .logo_wrap img {
